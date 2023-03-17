@@ -1,3 +1,62 @@
-header {
-    font-size: large;
+header{
+    position: fixed;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 200px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgb(150, 224, 227);
+    border-bottom: 5px solid black;
+    z-index: 1;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+h1{
+    font-size: 5em;
+    font-weight: 600;
+}
+
+#main {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.section{
+    width: 100%;
+    min-height: 100%;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+}
+a:hover{
+    cursor: pointer;
+}
+
+h3 {
+    align-items: center;
 }
